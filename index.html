@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-planète - Accueil</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="res/leaf.png" rel="icon">
+    <script src="scripts/leaf.js" defer></script>
+</head>
+<body onresize="document.body.style.setProperty('--size', document.body.offsetHeight + 'px');document.body.className = window.innerWidth / window.innerHeight > 12/9 ? 'landscape' : ''" onload="document.body.style.setProperty('--size', document.body.offsetHeight + 'px');document.body.className = window.innerWidth / window.innerHeight > 12/9 ? 'landscape' : ''">
+    
+    <div class="full">
+        <img src="res/background.png">
+        <div>
+            <h1 style="margin-right: 32px;">Notre planète,</h1>
+            <h1>notre Combat</h1>
+        </div>
+    </div>
+    <div class="full">
+        <img src="res/enfant-pollution.png">
+        <div><h1>L'avenir entre nos mains</h1></div>
+    </div>
+
+    <article>
+        <!-- <a><h2>Sommes nous des feuilles ?</h2><p>Oui! Nous sommes bel et bien des feuilles.</p></a> -->
+        <a>
+            <h2>Depuis plus d'un sièble, la température moyenne a augmenté de 1.2°C.</h2>
+            <p>La principale raison d'une telle augmentation est l'accroissement des gaz à effet de serre relachés dans l'atmoshères provenant des activités humaines.</p>
+        </a>
+        <a>
+            <h2>La concentration de CO2 a dépassé les 415 ppm.</h2>
+            <p>À cause de la pollution des moteurs thermiques et usines qui relachent une grande quantité de gaz à effet de serre.</p>
+        </a>
+        <a>
+            <h2>Le niveau moyen de la mer a augmenté de 20cm au cours du 20ème siècle.</h2>
+            <p>Cela s'explique par l'expansion thermique des océans et de la fonte des glaciers.</p>
+        </a>
+        <div>
+            <h1>Pour en apprendre davantage sur l'écologie, n'hésitez pas à consulter notre page "<a href="Act.html" style="color: blue;">Agir</a>" !</h1>
+        </div>
+        <div>
+            <h1>Et si vous voulez tester vos connaissances en rapport avec l'écologie, notre quiz en ligne est fait pour ça "<a href="Quiz.html" style="color: blue;">Quiz</a>" !</h1>
+        </div>
+
+    </article>
+    
+    <nav>
+        <img src="res/leaf.png" class="link" title="Go to home" alt="" onclick="location.replace('/')">
+        <a href="quiz.html?quiz=4">Quiz</a>
+        <a href="act.html">Agir</a>
+        <img src="res/theme.png" class="link" alt="" title="Change theme" onclick="changeTheme()">
+    </nav>
+</body>
+</html>
